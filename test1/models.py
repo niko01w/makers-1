@@ -5,7 +5,7 @@ class Post(models.Model):
     title = models.CharField(max_length=150, unique=True)
 
     def __str__(self):
-        return f'{self.owner} - {self.title}'
+        return f'{self.title}'
 
 
 class Comment(models.Model):
